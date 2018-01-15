@@ -1,0 +1,1 @@
+document.write('<div class="footer"><h1 class="nocount"> [Document Number]-[Project Name]</h1><h2 class="nocount"> Anergy Pty. Ltd.</h2><h3 class="nocount"> Lot 2 Estuary Drive<br> Bunbury, WA, 6230</h3></div>')

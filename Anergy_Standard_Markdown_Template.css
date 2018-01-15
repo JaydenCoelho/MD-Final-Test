@@ -1,0 +1,112 @@
+
+body {
+    counter-reset: section;
+    background-image: url('C:\Users\Administrator\Google Drive\82 Anergy Promotional Material\82-00 Anergy Branding and Core Stationary\Logos\Anergy Logos\Anergy Logos\82-12-02 Logo Unit Grey LG - CMYK.jpg')
+    opacity: 0.5;
+}
+
+.nocount::before {
+    content: none;
+    counter-increment: none;
+}
+
+h1 {
+    color: rgb(166,206,57);
+    font-family: sans-serif;
+    font-size: 34px;
+    position: sticky;
+    background-color: rgb(35,31,32);
+    counter-reset: subsection;
+}
+
+h2 {
+    color: rgb(0,166,81);
+    font-family: sans-serif;
+    font-size: 24px;
+    background-color: rgb(35,31,32);
+    counter-reset: subsubsection;
+}
+
+h3 {
+    color: rgb(23,91,57);
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: rgb(35,31,32);
+    width: 100%;
+}
+
+h4 {
+    color: rgb(166,206,57);
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+h5 {
+    color: rgb(0,166,81);
+    font-family: sans-serif;
+    font-size: 9px;
+}
+
+h6 {
+    color: rgb(23,91,57);
+    font-family: sans-serif;
+    font-size: 6px;
+}
+
+h1::before {
+    counter-increment: section;
+    content: counter(section) ".0\0000a0\0000a0"
+}
+
+h2::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) "\0000a0\0000a0";
+}
+
+h3::before {
+    counter-increment: subsubsection;
+    content: counter(section) "." counter(subsection) "." counter(subsubsection) "\0000a0\0000a0";
+}
+
+p {
+    color: rgb(35,31,32);
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.header, .footer {
+    width: 100%;
+    position: sticky;
+    background-color: rgb(35,31,32);
+    font-family: sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-top: 2px solid rgb(35,31,32);
+    border-bottom: 2px solid rgb(35,31,32);
+}
+
+td {
+    padding: 5px;
+    border-top: 1px solid rgb(35,31,32);
+    word-wrap: normal;
+    width: auto;
+    color: rgb(35,31,32);
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+th {
+    padding: 5px;
+    border-bottom: 2px solid rgb(35,31,32);
+    color: rgb(23,91,57);
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+tr:hover {
+    background-color: rgb(166,206,57);
+}
